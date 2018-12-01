@@ -2,4 +2,4 @@
 
 ## Some exercises solved in C++
 
-You can check the statements in https://adventofcode.com/
+You can check the challenges in https://adventofcode.com/
