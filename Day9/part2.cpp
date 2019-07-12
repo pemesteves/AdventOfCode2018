@@ -10,7 +10,7 @@ class Marble {
 	int number;
 	Marble* prev;
 	Marble* next;
-public:
+public: 
 	Marble(int n, Marble* p, Marble* next) { number = n; prev = p; this->next = next; }
 	Marble* getPrev() { return prev; }
 	Marble* getNext() { return next; }
@@ -30,7 +30,7 @@ Marble* insertAfter(Marble* m, int num) {
 	m->getNext()->setPrev(marble);
 	m->setNext(marble);
 	return marble;
-
+	
 }
 
 int main()
@@ -43,7 +43,7 @@ int main()
 	int num_players = stoi(line.substr(0, line.find(" ")));
 	line = line.substr(line.find("worth"));
 	line = line.substr(line.find(" ") + 1);
-	int last_marble_points = stoi(line.substr(0, line.find(" ")));
+	int last_marble_points = stoi(line.substr(0, line.find(" ")))*100;
 
 	vector<long long> players(num_players, 0);
 
